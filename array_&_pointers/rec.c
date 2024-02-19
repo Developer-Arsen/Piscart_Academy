@@ -21,10 +21,10 @@ void print_arr_reverse(int size, int * arr) {
 }
 
 void print_interval(int n) {
-    if (n == -1) return;
+    if (n < 0) return;
 
+    print_interval(n-1);
     printf(" %d ", n);
-    return print_interval(n-1);
 }
 
 int power(int base, int exp) {
@@ -36,17 +36,17 @@ int power(int base, int exp) {
 
 int main () {
     int x = 0;
-    // scanf("%d", &x);
+    scanf("%d", &x);
 
-    // print_interval(x);
+    print_interval(x);
     // int sum = power(2, x);
     // printf("sum is : %d ", sum);
 
-    const int size = 5;
-    int arr[size];
+    // const int size = 5;
+    // int arr[size];
 
-    scan_arr(size, arr);
-    print_arr(size, arr, 0);
+    // scan_arr(size, arr);
+    // print_arr(size, arr, 0);
 
 
 
