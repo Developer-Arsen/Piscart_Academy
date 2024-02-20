@@ -40,16 +40,6 @@ void sum_aux_diaganal(int arr[][size]) {
     printf("auxulary diaganal sum = %d", sum);
 }
 
-void sum_main_diaganal_under(int arr[][4], int row, int column) {
-    int sum = 0;
-    for (int i = 0; i < row * row; i++) {
-        int a  = i % row;
-        int b  = i % column;
-        if (a > b) sum += arr[a][b];
-    }
-    printf("main diaganal under sum = %d", sum);
-}
-
 void reverse_diaganals(int arr[][size]) {
     int sum = 0;
     for (int i = 0; i < size; i++) {
@@ -60,30 +50,54 @@ void reverse_diaganals(int arr[][size]) {
 void rotate_matrix_by_90(int arr[][size]) {
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size ; j++) {
-            swap_by_ref(&arr[i][j], &arr[i][size-j-1]);
+            swap_by_ref(&arr[i][0], &arr[i][size-i-1]);
         }
     }
 }
 
+void sum_main_diaganal_dawn(int (*arr)[size], int row) {
+    int sum = 0;
+    for (int i = 0; i < row * row; i++) {
+        int a  = i / row;
+        int b  = i % row;
+        if (a > b) sum += arr[a][b];
+    }
+
+    printf("main diaganal under sum = %d \n", sum);
+}
+
+void sum_main_diaganal_up(int (*arr)[size], int row) {
+    int sum = 0;
+    for (int i = 0; i < row * row; i++) {
+        int a  = i / row;
+        int b  = i % row;
+        if (a < b) sum += arr[a][b];
+    }
+
+    printf("main diaganal up sum = %d \n", sum);
+}
+
+void sum_aux_diaganal_up(int (*arr)[size], int row) {
+    int sum = 0;
+    for (int i = 0; i < row * row; i++) {
+        int a  = i / row;
+        int b  = i % row;
+        if (a + 1 ) sum += arr[a][b];
+    }
+
+    printf("main diaganal up sum = %d \n", sum);
+}
+
+    // k + p > row -1
+
 int main () {
 
-    int arr [size][size];
-    scan_arr(arr);
-    print_arr(arr);
-    rotate_matrix_by_90(arr);
-    printf("\n");
-
-    print_arr(arr);
-
-
-    // sum_main_diaganal(arr);
-    // sum_aux_diaganal(arr);
-
-    // sum_main_diaganal_under(arr, size, size);
-    // reverse_diaganals(arr);
+    // int arr [size][size];
+    // scan_arr(arr);
     // print_arr(arr);
 
-
-   
-
+    // sum_aux_diaganal_up(arr, size);
+    int a  = 4;
+    int *ptr = &a;
+    printf("%d %d", *ptr, a);
 }

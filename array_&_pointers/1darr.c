@@ -90,7 +90,7 @@ void sort_by_evens_no_consecutive(int size, int * arr) {
 }
 
 void sort_by_evens_consecutive(int size, int * arr) {
-    for (int i = 0, j = 1; i <= size / 2 && j > size;) {
+    for (int i = 0, j = 1; i <= size / 2 && j <= size;) {
         if (arr[i] % 2 == 0) {
                 swap_by_ref(&arr[i], &arr[i+j]);
                 j++;
@@ -115,11 +115,32 @@ void find_biggest_area(int size, int * arr) {
     printf("biggest area is: %d", max);
 }
 
-int main () {
-    // const int size = 5;
-    // int arr[size];
+int binary_search(int size, int *arr, int target) {
+    int mid = 0;
+    int start = 0;
+    int end = size -1; 
 
-    // scan_arr(size, arr);
+    while (start <= end) {
+        mid = (start - end) / 2 + start;
+
+        if (target == arr[mid]) return mid;
+
+        if (target > arr[mid]) start = mid + 1;
+        else end = mid -1;
+    }
+
+    return -1;
+}
+
+int main () {
+    const int size = 5;
+    int arr[size];
+    int x = 4;
+
+    scan_arr(size, arr);
+    int target = binary_search(size, arr, x);
+    printf("%d", target);
+
     // print_arr(size, arr);
     return 0;
 }
