@@ -57,17 +57,23 @@ int find_arr_mean(int size, int * arr) {
 
 int binary_search(int * arr, int left, int right, int target) {
     if (left <= right) {
-        int mid = left + (right - left) / 2;
+        int mid = left + (right-left) / 2;
 
-        if (arr[mid] == target)
-            return mid;
+        if (target == arr[mid]) return mid;
 
         if (arr[mid] > target)
-            return binary_search(arr, left, mid -1, target);
+            return binary_search(arr, left, mid-1, target);
 
         return binary_search(arr, mid + 1, right, target);
     }
     return -1;
+}
+
+int print_binary (int n) {
+    if (n == 0) return 0;
+
+    print_binary(n / 2); 
+    printf("%d", n % 2);
 }
 
 int main () {
@@ -78,18 +84,23 @@ int main () {
     // int sum = power(2, x);
     // printf("sum is : %d ", sum);
 
-    const int size = 5;
-    int arr[size];
+    // const int size = 5;
+    // int arr[size];
 
-    scan_arr(size, arr);
-    int max = binary_search(arr, 0, size-1, 4);
-    printf("index is %d \n", max);
+    // scan_arr(size, arr);
+    // int max = binary_search(arr, 0, size-1, 4);
+    // printf("index is %d \n", max);
+    // int b = 10;
+    // int const* const a = &b;
+    // int c = 0;
+    // *a = 10;
 
     // int min = find_arr_min(size, arr);
     // printf("min is %d \n", min);
 
     // int mean = find_arr_mean(size, arr);
     // printf("mean is %d \n", mean);
+    print_binary(5);
 
 
 
