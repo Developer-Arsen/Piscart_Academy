@@ -37,7 +37,7 @@ void sum_aux_diaganal(int arr[][size]) {
     for (int i = 0; i < size; i++) {
         sum += arr[i][size-1-i];
     }
-    printf("auxulary diaganal sum = %d", sum);
+    printf("auxiliary diaganal sum = %d", sum);
 }
 
 void reverse_diaganals(int arr[][size]) {
@@ -82,22 +82,28 @@ void sum_aux_diaganal_up(int (*arr)[size], int row) {
     for (int i = 0; i < row * row; i++) {
         int a  = i / row;
         int b  = i % row;
-        if (a + 1 ) sum += arr[a][b];
+        if (a + b < row- 1 ) sum += arr[a][b];
     }
 
-    printf("main diaganal up sum = %d \n", sum);
+    printf("auxiliary diaganal up sum = %d \n", sum);
 }
 
-    // k + p > row -1
+void sum_aux_diaganal_down(int (*arr)[size], int row) {
+    int sum = 0;
+    for (int i = 0; i < row * row; i++) {
+        int a  = i / row;
+        int b  = i % row;
+        if ( a + b > row -1) sum += arr[a][b];
+    }
+
+    printf("auxiliary diaganal up sum = %d \n", sum);
+}
 
 int main () {
 
-    // int arr [size][size];
-    // scan_arr(arr);
-    // print_arr(arr);
+    int arr [size][size];
+    scan_arr(arr);
+    print_arr(arr);
 
-    // sum_aux_diaganal_up(arr, size);
-    int a  = 4;
-    int *ptr = &a;
-    printf("%d %d", *ptr, a);
+    sum_aux_diaganal_up(arr, size);
 }

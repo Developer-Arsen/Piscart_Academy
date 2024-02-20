@@ -55,8 +55,19 @@ int find_arr_mean(int size, int * arr) {
     return sum;
 }
 
-int binary_search(int size, int * arr, int target) {
-    
+int binary_search(int * arr, int left, int right, int target) {
+    if (left <= right) {
+        int mid = left + (right - left) / 2;
+
+        if (arr[mid] == target)
+            return mid;
+
+        if (arr[mid] > target)
+            return binary_search(arr, left, mid -1, target);
+
+        return binary_search(arr, mid + 1, right, target);
+    }
+    return -1;
 }
 
 int main () {
@@ -70,9 +81,9 @@ int main () {
     const int size = 5;
     int arr[size];
 
-    // scan_arr(size, arr);
-    // int max = find_arr_max(size, arr);
-    // printf("max is %d \n", max);
+    scan_arr(size, arr);
+    int max = binary_search(arr, 0, size-1, 4);
+    printf("index is %d \n", max);
 
     // int min = find_arr_min(size, arr);
     // printf("min is %d \n", min);
