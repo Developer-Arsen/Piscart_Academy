@@ -84,6 +84,7 @@ int main () {
     char dest[10] = {"ars"};
    
     lesson_str_cat(dest, src);
+    strcat();
     puts(dest);
 
     // char * a  = strchr(src, 'e');
