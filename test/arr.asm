@@ -4,13 +4,16 @@ section .data
     size equ ($-arr) / 4
 section .rodata
 section .text
-    extern print_arr:
-    extern printf:
+    extern printf
     global main:
 
-print_arr: 
-    enter 0,0
-    mov ebx, 0 
+main: 
+    push rbp
+    mov rbp, rsp
+    sub rsp, 16
+
+    mov dword[rbp-8], size
+    mov rbx, 0
 loop_: 
     cmp ebx, dword[rbp-8]
     jae end
@@ -23,16 +26,6 @@ loop_:
     inc rbx
     jmp loop_
 
-    leave
-    ret
-
-main: 
-    push rbp
-    mov rbp, rsp
-    sub rsp, 16
-
-    mov dword[rbp-8], size
-    
 end: 
     mov rsp, rbp
     pop rbp
