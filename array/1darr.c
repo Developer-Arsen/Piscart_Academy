@@ -51,6 +51,7 @@ void reverse_arr(int size, int * arr) {
 
 void find_missing_value(int size, int * arr) {
     int intervalSum = (arr[0] + arr[size-1]) * (size + 1) / 2;
+    
     // s = (a1 + an) * size / 2
     int sum = 0;
     for (int i = 0; i < size; i++) {

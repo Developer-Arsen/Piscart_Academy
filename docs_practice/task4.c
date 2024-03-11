@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+
+void is_armstrong(int n) {
+    int sum = 0;
+    int tmp = n;
+
+    int count = 0;
+    while (tmp)
+    {
+        count++;
+        tmp /= 10;
+    }
+    
+    int nOrigin = n;
+    while (n)
+    {
+        sum += pow((n %10) , count);
+        n /= 10;
+    }
+    if (sum == nOrigin) printf("true");
+    else printf("false");
+}
+
+int main () {
+    int n = 153;
+    is_armstrong(n);
+
+}

@@ -8,7 +8,7 @@ int main () {
     char hex[7] = {"0x"};
     int decimal = 100;
 
-    char * res = decimalToHex(45, hex);
+    char * res = decimalToHex(decimal, hex);
     puts(res);
     
     // toUpper(upper);

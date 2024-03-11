@@ -17,6 +17,7 @@ double mul(int a , int b ) {
 
 int main () {
     fptr arr[] = {add, sub, mul};
+    double (*fp[]) (int , int) = {add, sub, mul};
 
     double (*p[3]) (int, int);
     p[0] = add;
