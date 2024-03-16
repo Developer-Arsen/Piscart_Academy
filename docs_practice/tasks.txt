@@ -12,12 +12,22 @@
 5.Գրեք «findIndex» անունով ֆունկցիա, որն ընդունում է ամբողջ թվերի զանգվածը, զանգվածի չափը և ֆունկցիայի ցուցիչը։ «findIndex» ֆունկցիան պետք է վերադարձնի զանգվածի առաջին տարրի ինդեքսը, որն անցնում է տրամադրված ֆունկցիայի կատարած թեստը։ Եթե ​​նման տարր չի գտնվել, վերադարձրեք -1:
 int findIndex(int arr*, int size, int (*testFunc)(int));
 
-6.https://leetcode.com/problems/binary-search/description/
-7.https://leetcode.com/problems/valid-anagram/
-8.https://leetcode.com/problems/maximum-subarray/
-9.https://leetcode.com/problems/add-digits/description/
-10.https://leetcode.com/problems/missing-number/description/
-11.Selection sort
+6. https://leetcode.com/problems/binary-search/description/
+7. https://leetcode.com/problems/valid-anagram/
+8. https://leetcode.com/problems/maximum-subarray/
+9. https://leetcode.com/problems/add-digits/description/
+10. https://leetcode.com/problems/missing-number/description/
+11. https://leetcode.com/problems/search-insert-position/description
+12. Selection sort
+13. Իրականացնել ռեկուրսիվ ֆունկցիա, որը կստանա տող և կվերադարձնի տողի երկարությունը
+14. Insertion sort
+15. https://leetcode.com/problems/rotate-image/description/
+16. Գրել void foo(int target, char c1, char c2, short sh) նախատիպով ֆունկցիան, որը c1, c2 և sh փոփոխականների արժեքները հերթականությամբ կտեղավորի target int տիպի փոփոխականի մեջ։
+17. Շրջել թվի բիթերը(reverse), օրինակ՝ 11110000 -> 00001111։
+18. Գրել ֆունկցիա, որը կկատարի բիթային գումարում։
+19. Քառակուսային մատրիցի գլխավոր և օժանդակ անկյունագծերի տարրերի արժեքները տեղերով փոխել։
+
+
 
 
 

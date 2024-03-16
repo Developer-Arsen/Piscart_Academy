@@ -27,13 +27,11 @@ int * selectionSort(int * arr, int size) {
 }
 
 int main () {
-    // int arr[] = {1,4,2,7,5};
-    double arr[20000000];
-    
+    int arr[] = {1,4,2,7,5};
 
-    // selectionSort(arr, 5); 
+    selectionSort(arr, 5); 
 
-    // for (int i = 0; i < 5; i++) {
-    //     printf("%d", arr[i]);
-    // }
+    for (int i = 0; i < 5; i++) {
+        printf("%d", arr[i]);
+    }
 }
