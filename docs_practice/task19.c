@@ -37,6 +37,7 @@ int main () {
         {7,8,9}
     };
     reverseDiaganals(arr);
+    
     printArr(arr);
 
 }
