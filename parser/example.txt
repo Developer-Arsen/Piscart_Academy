@@ -1,0 +1,10 @@
+groups analysis info:
+ {
+  Name: Picsart
+  Productivity: 82%
+  ActiveListening: 85%
+  UsingPhone: 10%
+  Sleeping: 1%
+  Other: 4%
+ },
+ 
