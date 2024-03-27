@@ -1,3 +1,5 @@
+// 6. https://leetcode.com/problems/binary-search/description/
+
 int binarysearch(int* nums, int numsSize, int target) {
    int mid = 0;
    int start = 0;

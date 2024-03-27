@@ -1,4 +1,6 @@
 #include <stdio.h>
+// 18. Գրել ֆունկցիա, որը կկատարի բիթային գումարում։
+
 void fullAder(int a, int b) {
     int cary = 0;
     int count = 0;
@@ -6,9 +8,9 @@ void fullAder(int a, int b) {
     
     while(count != 32) {
         int aDigit = a & 1;
-        a = a >> 1;
+        a >>= 1;
         int bDigit = b & 1;
-        b = b >> 1;
+        b >>= 1;
 
         int sum1 = aDigit ^ bDigit;
         int cary2 = aDigit & bDigit;
@@ -25,5 +27,5 @@ void fullAder(int a, int b) {
 }
 
 int main () {
-    fullAder(120, 50);
+    fullAder(-1, -20);
 }

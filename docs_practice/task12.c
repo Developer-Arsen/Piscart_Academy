@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+// 12. Selection sort
+
+
 void swap(int * a, int *b) {
     int tmp = *a;
     *a = *b;

@@ -1,4 +1,5 @@
 #include <stdio.h>
+// 2.Ստուգել թվի 1 արժեքով բիթերի քանակը կենտ է, թե զույգ:
 
 void count_odd_bits (int n) {
     int count = 0;

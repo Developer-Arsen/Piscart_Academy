@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+// 7. https://leetcode.com/problems/valid-anagram/
+
+
 int my_strlen (char *s) {
     int count = 0;
     while (*s){
