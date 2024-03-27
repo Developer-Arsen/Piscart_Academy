@@ -7,4 +7,13 @@ groups analysis info:
   Sleeping: 1%
   Other: 4%
  },
+
+  {
+  Name: Picsart
+  Productivity: 82%
+  ActiveListening: 85%
+  UsingPhone: 10%
+  Sleeping: 1%
+  Other: 4%
+ },
  

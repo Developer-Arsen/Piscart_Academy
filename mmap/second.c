@@ -17,6 +17,7 @@ int main () {
     }
 
     ptr[0] = 20;
+    while(1);
 
     return 0;
     

@@ -16,7 +16,9 @@ int main () {
         exit(1);
     }
 
-
+    // long int pageSize = sysconf(_SC_PAGESIZE);
+    // long int clock = sysconf(_SC_CLK_TCK);
+    // printf("%d            %d \n", pageSize, clock);
     while (ptr[0] != 20);
     puts("Gnacinq yndmijum");
 

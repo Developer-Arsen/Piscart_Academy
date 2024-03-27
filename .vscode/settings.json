@@ -51,6 +51,7 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "stdlib.h": "c",
-        "dlfcn.h": "c"
+        "dlfcn.h": "c",
+        "mman.h": "c"
     }
 }
