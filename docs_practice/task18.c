@@ -27,5 +27,5 @@ void fullAder(int a, int b) {
 }
 
 int main () {
-    fullAder(-1, -20);
+    fullAder(-11, -45);
 }
