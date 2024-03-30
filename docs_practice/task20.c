@@ -1,7 +1,7 @@
+// 20. Գրել ֆունկցիա, որը կկատարի բիթային բազմապատկում։
 #include <stdio.h>
-// 18. Գրել ֆունկցիա, որը կկատարի բիթային գումարում։
 
-void fullAder(int a, int b) {
+int fullAder(int a, int b) {
     int cary = 0;
     int count = 0;
     int final = 0;
@@ -23,9 +23,33 @@ void fullAder(int a, int b) {
         // final |= cary << (count + 1);
         count++;
     }
-    printf("%d \n", final);
+    return final;
 }
 
-int main () {
-    fullAder(-11, -15);
+long long mulBinary (unsigned long a, unsigned long b) {
+    long long sum = 0;
+
+    while (b)
+    {
+        if (b & 1) {
+            sum += a;
+        }
+
+        a <<= 1;
+        b >>= 1;
+
+    }
+    return sum;
 }
+
+
+int main () {
+
+    long long res = mulBinary(-10, 20);
+    printf("%lld\n", res);
+
+}
+
+
+/// 101 a
+/// 100 b

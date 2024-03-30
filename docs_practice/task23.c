@@ -10,6 +10,7 @@ void push_back (int digit, int* arr, size_t * size, size_t * capacity) {
         *capacity += sizeof(int);
         return;
     } 
+
     *size += 1;
     *capacity += sizeof(int);
     arr = (int *) realloc(arr, (*size) * sizeof(int));
@@ -17,18 +18,16 @@ void push_back (int digit, int* arr, size_t * size, size_t * capacity) {
     
 }
 int main () {
-    size_t size = 4;
+    size_t size = 2;
     size_t capacity = 0;
 
     int * arr = (int*) calloc(size, sizeof(int));
-    for (int i = 0 ; i < size -1; i++) {
-        arr[i] = i;
-        capacity += sizeof(int);
-    }
 
     push_back(10, arr, &size, &capacity);
     push_back(15, arr, &size, &capacity);
     push_back(20, arr, &size, &capacity);
+    push_back(25, arr, &size, &capacity);
+    
     
     for (int i = 0 ; i < size; i++) {
         printf("%d \n",arr[i]);
