@@ -99,6 +99,8 @@ void sum_aux_diaganal_down(int (*arr)[size], int row) {
     printf("auxiliary diaganal up sum = %d \n", sum);
 }
 
+
+
 int main () {
 
     int arr [size][size];
@@ -106,4 +108,7 @@ int main () {
     print_arr(arr);
 
     sum_aux_diaganal_up(arr, size);
+
+    
+    
 }
