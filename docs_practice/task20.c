@@ -34,7 +34,6 @@ long long mulBinary (unsigned long a, unsigned long b) {
         if (b & 1) {
             sum += a;
         }
-
         a <<= 1;
         b >>= 1;
 

@@ -27,33 +27,46 @@
 //     }
 // }
 
-struct A {
-    int* a;
-} typedef A;
+// struct A {
+//     int* a;
+// } typedef A;
 
-union test 
-{
-    int* a;
-    int arr[100];
-};
+// union test 
+// {
+//     int* a;
+//     int arr[100];
+// };
+
+struct B {
+    short sh;
+    short a;
+    int d;
+} typedef B;
+
+struct A {
+    char arr[13];
+    short c;
+    B obj;
+} typedef A;
 
 
 int main () {
-    union test obj1;
+    // union test obj1;
 
-    // obj1 = (struct A){5};
-    // A * ptr = &obj1;
-    // ptr -> a = 5;
-    // (*ptr).a = 5;
-    obj1.a = (int*) malloc(1000);
+    // // obj1 = (struct A){5};
+    // // A * ptr = &obj1;
+    // // ptr -> a = 5;
+    // // (*ptr).a = 5;
+    // obj1.a = (int*) malloc(1000);
+z
 
-
-    *(obj1).a = 4;
-    (*(obj1).a)++;
-    *obj1.a = 8;
-    // obj1.obj.a = 5;
-    printf("%d\n", *obj1.a);
-    printf("%ld", sizeof(obj1));
+    // *(obj1).a = 4;
+    // (*(obj1).a)++;
+    // *obj1.a = 8;
+    // // obj1.obj.a = 5;
+    // printf("%d\n", *obj1.a);
+    // A a;
+    printf("%ld", sizeof(a));
 
     // Person obj = {"de hima", SHEF, 500};
     // foo(&obj);
