@@ -8,7 +8,7 @@ groups analysis info:
   Other: 4%
  },
 
-  {
+{
   Name: Picsart
   Productivity: 82%
   ActiveListening: 85%

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 //1.Կատարել swap գործողություն թվի i և j բիթերը տեղափոխելու համար։
 void swap_bits(int i, int j, int* n) {
     int bit1 = (*n >> i) & 1;
