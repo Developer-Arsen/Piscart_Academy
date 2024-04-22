@@ -19,7 +19,9 @@ int main (int argc, char* argv[]) {
         do
         {
             char * command = (char *) malloc(sizeof(char) * 10);
-            scanf("%10s", command);
+            fgets(command, 10, stdin);
+            
+            command[strcspn(command, "\n")] = 0;
             system(command);
             if (!strcmp(command, "exit")) {
                 flag = 0;
