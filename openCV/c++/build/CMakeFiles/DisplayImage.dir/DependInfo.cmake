@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/arsen/Piscart_Academy/openCV/DisplayImage.cpp" "CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o" "gcc" "CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o.d"
+  "/home/arsen/Piscart_Academy/openCV/c++/DisplayImage.cpp" "CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o" "gcc" "CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o.d"
   )
 
 # Targets to which this target links.

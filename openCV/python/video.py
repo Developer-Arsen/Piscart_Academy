@@ -1,26 +1,14 @@
-import cv2
+import cv2 as cv
+import sys
+import numpy as np
 
-def main():
-    cap = cv2.VideoCapture(0)
-    
-    if not cap.isOpened():
-        print("Error opening video stream")
-        return -1
+cap = cv.VideoCapture(0)
 
-    while True:
-        ret, frame = cap.read()
+while True:
+    ret, frame = cap.read()
+    cv.imshow("test", frame)
 
-        if not ret:
-            print("Failed to grab frame")
-            break
+    cv.waitKey(25)
 
-        cv2.imshow('Webcam', frame)
-
-        if cv2.waitKey(25) & 0xFF == 27:
-            break
-
-    cap.release()
-    cv2.destroyAllWindows()
-
-if __name__ == "__main__":
-    main()
+cap.release()
+cv.destroyAllWindows()

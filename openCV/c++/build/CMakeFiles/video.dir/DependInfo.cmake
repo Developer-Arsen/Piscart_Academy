@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/arsen/Piscart_Academy/openCV/video.cpp" "CMakeFiles/video.dir/video.cpp.o" "gcc" "CMakeFiles/video.dir/video.cpp.o.d"
+  "/home/arsen/Piscart_Academy/openCV/c++/video.cpp" "CMakeFiles/video.dir/video.cpp.o" "gcc" "CMakeFiles/video.dir/video.cpp.o.d"
   )
 
 # Targets to which this target links.

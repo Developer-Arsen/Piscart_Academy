@@ -1,22 +1,29 @@
-import cv2
+import cv2 as cv
 import sys
+import numpy as np
 
-def main(image_path):
-    image = cv2.imread(image_path, cv2.IMREAD_COLOR)
+def resize(frame, scale = 0.25):
+    width = int(frame.shape[1] * scale)
+    height = int(frame.shape[0] * scale)
+
+    dimensions = (width, height)
+
+    return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
+
+image = cv.imread(sys.argv[1])
+
+def rotate(img, angle, rotationPoint = None):
+    (height, width) = img.shape[:2]
+
+    if rotationPoint is None:
+        rotationPoint = (width // 2, height // 2)
+
+    rotMat = cv.getT
+
     
-    if image is None:
-        print("No image data")
-        return -1
-    
-    cv2.namedWindow("Display Image", cv2.WINDOW_AUTOSIZE)
-    cv2.imshow("Display Image", image)
-    
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-    
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python display_image.py <Image_Path>")
-        sys.exit(-1)
-    
-    main(sys.argv[1])
+if image is not None:
+    image = resize(image)
+    cv.imshow("test", image)
+    cv.imwrite("aaaa.jpg",image)
+    cv.waitKey(0)
+
