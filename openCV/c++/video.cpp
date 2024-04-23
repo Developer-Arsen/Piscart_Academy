@@ -1,8 +1,6 @@
 #include <iostream> 
 #include <opencv2/opencv.hpp> 
 #include <chrono>
-#include <thread>
-#include <typeinfo>
 
 using namespace cv;
 
