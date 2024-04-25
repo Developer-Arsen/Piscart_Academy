@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=video
+CMAKE_PROJECT_NAME:STATIC=faceDetection
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -220,6 +220,15 @@ DisplayImage_SOURCE_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++
 
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
+
+//Value Computed by CMake
+faceDetection_BINARY_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++/build
+
+//Value Computed by CMake
+faceDetection_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+faceDetection_SOURCE_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++
 
 //Value Computed by CMake
 video_BINARY_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++/build

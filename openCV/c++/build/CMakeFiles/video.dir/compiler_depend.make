@@ -419,10 +419,7 @@ CMakeFiles/video.dir/video.cpp.o: ../video.cpp \
   /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp \
   /usr/local/include/opencv4/opencv2/video.hpp \
   /usr/local/include/opencv4/opencv2/video/tracking.hpp \
-  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
-  /usr/include/c++/11/thread \
-  /usr/include/c++/11/bits/std_thread.h \
-  /usr/include/c++/11/bits/this_thread_sleep.h
+  /usr/local/include/opencv4/opencv2/video/background_segm.hpp
 
 
 /usr/local/include/opencv4/opencv2/video/tracking.hpp:
@@ -576,8 +573,6 @@ CMakeFiles/video.dir/video.cpp.o: ../video.cpp \
 /usr/include/c++/11/bits/parse_numbers.h:
 
 /usr/include/c++/11/ctime:
-
-/usr/include/c++/11/thread:
 
 /usr/include/c++/11/ratio:
 
@@ -997,8 +992,6 @@ CMakeFiles/video.dir/video.cpp.o: ../video.cpp \
 
 /usr/include/ctype.h:
 
-/usr/include/c++/11/bits/std_thread.h:
-
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
@@ -1104,8 +1097,6 @@ CMakeFiles/video.dir/video.cpp.o: ../video.cpp \
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 

@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named video
+# Target rules for targets named faceDetection
 
 # Build rule for target.
-video: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 video
-.PHONY : video
+faceDetection: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 faceDetection
+.PHONY : faceDetection
 
 # fast build rule for target.
-video/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/build
-.PHONY : video/fast
+faceDetection/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/faceDetection.dir/build.make CMakeFiles/faceDetection.dir/build
+.PHONY : faceDetection/fast
 
-video.o: video.cpp.o
-.PHONY : video.o
+faceDetection.o: faceDetection.cpp.o
+.PHONY : faceDetection.o
 
 # target to build an object file
-video.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/video.cpp.o
-.PHONY : video.cpp.o
+faceDetection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/faceDetection.dir/build.make CMakeFiles/faceDetection.dir/faceDetection.cpp.o
+.PHONY : faceDetection.cpp.o
 
-video.i: video.cpp.i
-.PHONY : video.i
+faceDetection.i: faceDetection.cpp.i
+.PHONY : faceDetection.i
 
 # target to preprocess a source file
-video.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/video.cpp.i
-.PHONY : video.cpp.i
+faceDetection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/faceDetection.dir/build.make CMakeFiles/faceDetection.dir/faceDetection.cpp.i
+.PHONY : faceDetection.cpp.i
 
-video.s: video.cpp.s
-.PHONY : video.s
+faceDetection.s: faceDetection.cpp.s
+.PHONY : faceDetection.s
 
 # target to generate assembly for a file
-video.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/video.cpp.s
-.PHONY : video.cpp.s
+faceDetection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/faceDetection.dir/build.make CMakeFiles/faceDetection.dir/faceDetection.cpp.s
+.PHONY : faceDetection.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... video"
-	@echo "... video.o"
-	@echo "... video.i"
-	@echo "... video.s"
+	@echo "... faceDetection"
+	@echo "... faceDetection.o"
+	@echo "... faceDetection.i"
+	@echo "... faceDetection.s"
 .PHONY : help
 
 
