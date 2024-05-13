@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/arsen/Piscart_Academy/openCV/c++/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/faceDetection.dir/all
+all: CMakeFiles/eigenFaces.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/faceDetection.dir/clean
+clean: CMakeFiles/eigenFaces.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/faceDetection.dir
+# Target rules for target CMakeFiles/eigenFaces.dir
 
 # All Build rule for target.
-CMakeFiles/faceDetection.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/faceDetection.dir/build.make CMakeFiles/faceDetection.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/faceDetection.dir/build.make CMakeFiles/faceDetection.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/arsen/Piscart_Academy/openCV/c++/build/CMakeFiles --progress-num=1,2 "Built target faceDetection"
-.PHONY : CMakeFiles/faceDetection.dir/all
+CMakeFiles/eigenFaces.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eigenFaces.dir/build.make CMakeFiles/eigenFaces.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eigenFaces.dir/build.make CMakeFiles/eigenFaces.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/arsen/Piscart_Academy/openCV/c++/build/CMakeFiles --progress-num=1,2 "Built target eigenFaces"
+.PHONY : CMakeFiles/eigenFaces.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/faceDetection.dir/rule: cmake_check_build_system
+CMakeFiles/eigenFaces.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/arsen/Piscart_Academy/openCV/c++/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/faceDetection.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/eigenFaces.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/arsen/Piscart_Academy/openCV/c++/build/CMakeFiles 0
-.PHONY : CMakeFiles/faceDetection.dir/rule
+.PHONY : CMakeFiles/eigenFaces.dir/rule
 
 # Convenience name for target.
-faceDetection: CMakeFiles/faceDetection.dir/rule
-.PHONY : faceDetection
+eigenFaces: CMakeFiles/eigenFaces.dir/rule
+.PHONY : eigenFaces
 
 # clean rule for target.
-CMakeFiles/faceDetection.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/faceDetection.dir/build.make CMakeFiles/faceDetection.dir/clean
-.PHONY : CMakeFiles/faceDetection.dir/clean
+CMakeFiles/eigenFaces.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eigenFaces.dir/build.make CMakeFiles/eigenFaces.dir/clean
+.PHONY : CMakeFiles/eigenFaces.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

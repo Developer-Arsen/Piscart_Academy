@@ -5,7 +5,7 @@
 void detect_faces(cv::Mat& img)
 {
   cv::CascadeClassifier face_cascade;
-  face_cascade.load("/home/arsen/Piscart_Academy/openCV/haarcascade_frontalface_default.xml");
+  face_cascade.load("../../haarcascade_frontalface_default.xml");
 
   if (face_cascade.empty())
     std::cout << "Classifier has not been loaded!\n";
@@ -16,6 +16,7 @@ void detect_faces(cv::Mat& img)
   for (auto& face : faces)
     rectangle(img, face.tl(), face.br(), cv::Scalar(255, 0, 255), 3);
 }
+
 int main()
 {
   cv::VideoCapture cap(0);

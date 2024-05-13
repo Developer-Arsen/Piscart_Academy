@@ -101,21 +101,34 @@ void matrix_main_diaganal_up_fib(int arr[][4], int row, bool (*fptr)(int)) {
     }
 }
 
+
+void printSum(int a, int b) {
+    printf("%d \n", a+b);
+}
+
+
 int main () {
-    const int size = 4;
-    int arr[][4] = {
-        {1,2,2,2},
-        {1,1,2,2},
-        {1,1,1,2},
-        {1,1,1,1}
-    };
+    void (*arsen) (int, int);
+    printSum(4,5);
+    arsen = printSum;
+    arsen(4,5);
 
-    // matrix_main_diaganal_up_fib(arr, size, is_palindrome);
-    // int res = matrix_main_diaganal_up_palindrome_mult(arr, size, is_palindrome);
+    char * str = "hello"; 
+    char str2[20] = "hello";
+    // const int size = 4;
+    // int arr[][4] = {
+    //     {1,2,2,2},
+    //     {1,1,2,2},
+    //     {1,1,1,2},
+    //     {1,1,1,1}
+    // };
+
+    // // matrix_main_diaganal_up_fib(arr, size, is_palindrome);
+    // // int res = matrix_main_diaganal_up_palindrome_mult(arr, size, is_palindrome);
+    // // printf("%d \n", res);
+
+    // int res = factorial_recursive_by_caching(5);
+    // // 0 1 1 2 3 5 8 13
     // printf("%d \n", res);
-
-    int res = factorial_recursive_by_caching(5);
-    // 0 1 1 2 3 5 8 13
-    printf("%d \n", res);
 
 }

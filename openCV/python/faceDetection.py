@@ -19,7 +19,7 @@ while True:
     frame = faceDetect(frame)
     cv.imshow("test", frame)
 
-    key = cv.waitKey(100)
+    key = cv.waitKey(5)
     if key == 27:
         break
 

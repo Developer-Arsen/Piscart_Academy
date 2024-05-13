@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named faceDetection
+# Target rules for targets named eigenFaces
 
 # Build rule for target.
-faceDetection: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 faceDetection
-.PHONY : faceDetection
+eigenFaces: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eigenFaces
+.PHONY : eigenFaces
 
 # fast build rule for target.
-faceDetection/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/faceDetection.dir/build.make CMakeFiles/faceDetection.dir/build
-.PHONY : faceDetection/fast
+eigenFaces/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eigenFaces.dir/build.make CMakeFiles/eigenFaces.dir/build
+.PHONY : eigenFaces/fast
 
-faceDetection.o: faceDetection.cpp.o
-.PHONY : faceDetection.o
+eigenFaces.o: eigenFaces.cpp.o
+.PHONY : eigenFaces.o
 
 # target to build an object file
-faceDetection.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/faceDetection.dir/build.make CMakeFiles/faceDetection.dir/faceDetection.cpp.o
-.PHONY : faceDetection.cpp.o
+eigenFaces.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eigenFaces.dir/build.make CMakeFiles/eigenFaces.dir/eigenFaces.cpp.o
+.PHONY : eigenFaces.cpp.o
 
-faceDetection.i: faceDetection.cpp.i
-.PHONY : faceDetection.i
+eigenFaces.i: eigenFaces.cpp.i
+.PHONY : eigenFaces.i
 
 # target to preprocess a source file
-faceDetection.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/faceDetection.dir/build.make CMakeFiles/faceDetection.dir/faceDetection.cpp.i
-.PHONY : faceDetection.cpp.i
+eigenFaces.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eigenFaces.dir/build.make CMakeFiles/eigenFaces.dir/eigenFaces.cpp.i
+.PHONY : eigenFaces.cpp.i
 
-faceDetection.s: faceDetection.cpp.s
-.PHONY : faceDetection.s
+eigenFaces.s: eigenFaces.cpp.s
+.PHONY : eigenFaces.s
 
 # target to generate assembly for a file
-faceDetection.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/faceDetection.dir/build.make CMakeFiles/faceDetection.dir/faceDetection.cpp.s
-.PHONY : faceDetection.cpp.s
+eigenFaces.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eigenFaces.dir/build.make CMakeFiles/eigenFaces.dir/eigenFaces.cpp.s
+.PHONY : eigenFaces.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... faceDetection"
-	@echo "... faceDetection.o"
-	@echo "... faceDetection.i"
-	@echo "... faceDetection.s"
+	@echo "... eigenFaces"
+	@echo "... eigenFaces.o"
+	@echo "... eigenFaces.i"
+	@echo "... eigenFaces.s"
 .PHONY : help
 
 

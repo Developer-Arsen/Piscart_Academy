@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <singal.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
+#include <sys.type.h>
+
+incha process y
+PCB -ira andamnery 
+process states  TASK_RUN stopped traced
+fork & exec yntaniq getpid getppid getuid 
+exit atexit onexit
+wait i tesaknery 
+process i avartman vichaknery  WIFexitied WIFSIGNAL EEXITSTATUS 
+
+process scheulder 
+
+real-time process 
+normal process staticprio normal prio rt_priority shed_fifo shed_rr
+CFS method completly fair scgeduler 
+nice value
+normal process polices  sched normal sched batch sched idle 
+CAP_SYS_NICE
+setPriority get priority
+sched_get_schedule
+sched_set_schedule
+sched_get_priority_max
+sched_rr_get_interval
+sched_yield
+cpu set_t set_t
+CPU_ZERO CPU_ISSET CPU_CLR CPU_ISSET
+sched_get_affinity oncpu cpu cpu_mask task structi mej en ays angamnery 
+execption tesaknery interupt (hardware) asynchnornous trap synchronous fault abort 
+signal handler types typdef void(*sigaction)(int, struct siginfo*, void*) 
+sication  SA_RESTART SA_NOCLDSTOP SA_SIGINFO SA_STACK
+
+alarm pause kill raise 
+
+sigset_t set sigsetempty sigfillset sigaddset sigdelset sigismember 
+sigpromask SIG_BLOCK SIG_UNBLOCK SIG_SETMASK
+
+information node fileri hamar 
+hard link y irenic nerkayacnuma tvyal file i inodi hascen 
+files_struct files* fdtable 
+open, creat O_RD_ONLY O_WR_ONLY O_RDWR O_APPEND O_ASYNC 
+write
+fsync sync fdatasynch close 
+pwrite pread, select, pselect poll, ppoll
+
+
+

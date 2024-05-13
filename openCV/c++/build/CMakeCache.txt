@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=faceDetection
+CMAKE_PROJECT_NAME:STATIC=eigenFaces
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -218,8 +218,26 @@ DisplayImage_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 DisplayImage_SOURCE_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++
 
+//Value Computed by CMake
+LBPHFaces_BINARY_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++/build
+
+//Value Computed by CMake
+LBPHFaces_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+LBPHFaces_SOURCE_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++
+
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
+
+//Value Computed by CMake
+eigenFaces_BINARY_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++/build
+
+//Value Computed by CMake
+eigenFaces_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+eigenFaces_SOURCE_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++
 
 //Value Computed by CMake
 faceDetection_BINARY_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++/build
@@ -229,6 +247,24 @@ faceDetection_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 faceDetection_SOURCE_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++
+
+//Value Computed by CMake
+faceRecognation_BINARY_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++/build
+
+//Value Computed by CMake
+faceRecognation_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+faceRecognation_SOURCE_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++
+
+//Value Computed by CMake
+fisherFaces_BINARY_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++/build
+
+//Value Computed by CMake
+fisherFaces_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+fisherFaces_SOURCE_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++
 
 //Value Computed by CMake
 video_BINARY_DIR:STATIC=/home/arsen/Piscart_Academy/openCV/c++/build

@@ -1,0 +1,2 @@
+SImple text Analyzer
+count word count, symbol count, itensity of word, max intensity word barev
